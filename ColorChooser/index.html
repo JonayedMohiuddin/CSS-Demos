@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Color Chooser</title>
+	<style type="text/css">
+		h1 {
+			text-align: center;
+		}
+
+		#swatch {
+			width: 200px;
+			height: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: rgb(128, 128, 128);
+			margin-bottom: 5em;
+		}
+
+		output {
+			float: left;
+			width: 10em;
+			clear: left;
+			margin-left: 5em;
+			text-align: right;
+			padding-right: 1em;
+		}
+
+		input {
+			float: left;
+			width: 20em;
+		}
+	</style>
+	<script type="text/javascript">
+		function changeColor() {
+			//set up form elements
+			var swatch = document.getElementById("swatch");
+			var sldRed = document.getElementById("sldRed");
+			var outRed = document.getElementById("outRed");
+			var sldGreen = document.getElementById("sldGreen");
+			var outGreen = document.getElementById("outGreen");
+			var sldBlue = document.getElementById("sldBlue");
+			var outBlue = document.getElementById("outBlue");
+
+			//get values
+			var red = sldRed.value;
+			var green = sldGreen.value;
+			var blue = sldBlue.value;
+
+			//change color
+			swatch.style.backgroundColor = "rgb(" + red + "," +
+				green + "," +
+				blue + ")";
+
+			//get hexVals
+			var hexRed = Number(red).toString(16).toUpperCase();
+			var hexGreen = Number(green).toString(16).toUpperCase();
+			var hexBlue = Number(blue).toString(16).toUpperCase();
+
+			//update output
+			outRed.value = "Red: " + red + " (" + hexRed + ")";
+			outGreen.value = "Green: " + green + " (" + hexGreen + ")";
+			outBlue.value = "Blue: " + blue + " (" + hexBlue + ")";
+
+		} // end changeColor
+	</script>
+</head>
+
+<body>
+	<h1>Color Chooser</h1>
+	<div id="swatch"></div>
+	<form action="">
+		<output id="outRed">Red: 128 (80)</output>
+		<input id="sldRed" type="range" min="0" max="255" value="128" onchange="changeColor()" />
+		<output id="outGreen">Green: 128 (80)</output>
+		<input id="sldGreen" type="range" min="0" max="255" value="128" onchange="changeColor()" />
+		<output id="outBlue">Blue: 128 (80)</output>
+		<input id="sldBlue" type="range" min="0" max="255" value="128" onchange="changeColor()" />
+	</form>
+</body>
+
+</html>

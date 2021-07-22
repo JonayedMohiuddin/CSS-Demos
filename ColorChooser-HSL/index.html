@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HSL Color Chooser</title>
+	<style type="text/css">
+		h1 {
+			text-align: center;
+		}
+
+		#swatch {
+			width: 200px;
+			height: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: hsl(0, 50%, 50%);
+			margin-bottom: 5em;
+		}
+
+		output {
+			float: left;
+			width: 10em;
+			clear: left;
+			margin-left: 5em;
+			text-align: right;
+			padding-right: 1em;
+		}
+
+		input {
+			float: left;
+			width: 20em;
+		}
+	</style>
+	<script type="text/javascript">
+		function changeColor() {
+			//set up form elements
+			var swatch = document.getElementById("swatch");
+			var sldHue = document.getElementById("sldHue");
+			var outHue = document.getElementById("outHue");
+			var sldSat = document.getElementById("sldSat");
+			var outSat = document.getElementById("outSat");
+			var sldLight = document.getElementById("sldLight");
+			var outLight = document.getElementById("outLight");
+
+			//get values
+			var hue = sldHue.value;
+			var sat = sldSat.value;
+			var light = sldLight.value;
+
+			//change color
+			swatch.style.backgroundColor = "hsl(" + hue + "," +
+				sat + "%," +
+				light + "%)";
+
+			//update output
+			outHue.value = "Hue: " + hue;
+			outSat.value = "Saturation: " + sat + "%";
+			outLight.value = "Lightness: " + light + "%";
+
+		} // end changeColor
+	</script>
+</head>
+
+<body>
+	<h1>HSL Color Chooser</h1>
+	<div id="swatch"></div>
+	<form action="">
+		<output id="outHue">Hue: 0</output>
+		<input id="sldHue" type="range" min="0" max="360" value="0" onchange="changeColor()" />
+		<output id="outSat">Saturation: 50%</output>
+		<input id="sldSat" type="range" min="0" max="100" value="50" onchange="changeColor()" />
+		<output id="outLight">Lightness: 50%</output>
+		<input id="sldLight" type="range" min="0" max="100" value="50" onchange="changeColor()" />
+	</form>
+</body>
+
+</html>

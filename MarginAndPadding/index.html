@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<title>marginPadding.html</title>
+	<style type="text/css">
+		div {
+			border: red 5px solid;
+		}
+
+		div > p {
+			border: black 2px solid;
+		}
+
+		#margin {
+			margin: 5px;
+		}
+
+		#padding {
+			padding: 5px;
+		}
+
+		#both {
+			margin: 5px;
+			padding: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Margins and padding</h1>
+	<div id="main">
+		<p>This paragraph has the default margins and padding</p>
+		<p id="margin">This paragraph has a margin but no padding</p>
+		<p id="padding">This paragraph has padding but no margin</p>
+		<p id="both">This paragraph has a margin and padding</p>
+	</div>
+	
+	<p>You can watch the padding, border and margin on the console.</p>
+</body>
+</html>

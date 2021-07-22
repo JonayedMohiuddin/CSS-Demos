@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Border Image</title>
+	<style>
+		h2 {
+			border-width: 15px;
+      border-style: solid;
+			border-image: url("frame.png") 25% repeat;
+			-webkit-border-image: url("frame.png") 25% repeat;
+			-moz-border-image: url("frame.png") 25% repeat;
+		}
+	</style>
+</head>
+
+<body>
+	<p>
+		original image : <img src="frame.png" alt="frame" width=100px height=100px>
+	</p>
+	<h2>Border using image.</h2>
+	
+	<!--Details-->
+	<hr style="margin-top:80px">
+	<h3>What’s up with the -moz and -webkit stuff?</h3>
+	<p>As you look over the code for the image
+	border demo, you’ll see three versions of
+	the border-image rule: border-image,
+	-webkit-border-image, and -moz-
+	border-image. This is a pattern you’ll see
+	on many of the newer CSS elements. While
+	an element is still being finalized, some of
+	the browser manufacturers will define a test
+	version of the rule using a special browser-
+	specific prefix.-webkit is the rendering
+	image used in Chrome and Safari, and -moz
+	is used by Firefox. Sometimes you’ll also see
+	the -o prefix to indicate Opera, and -ms to
+	represent Internet Explorer. You can always
+	try the generic rule name, but for newer rules
+	like image border, it’s also safe to include
+	the vendor-specific versions. As acceptance
+	of these newer rules becomes more wide-
+	spread, the vendor prefixes will no longer be
+	needed.</p>
+</body>
+
+</html>

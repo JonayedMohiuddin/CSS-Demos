@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<title>webSafe.html</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Web-Safe Color Tester</h1>
+	<h2 id="output">Current Color: #000000</h2>
+	<form action="">
+		<table border="0">
+			<tr>
+				<th>Red</th>
+				<th>Green</th>
+				<th>Blue</th>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" class="relColor" onclick="addRed(10)">
+						+10
+					</button>
+				</td>
+				<td>
+					<button type="button" class="relColor" onclick="addGreen(10)">
+						+10
+					</button>
+				</td>
+				<td>
+					<button type="button" class="relColor" onclick="addBlue(10)">
+						+10
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" onclick="setRed(0xFF)">
+						FF
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setGreen(0xFF)">
+						FF
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setBlue(0xFF)">
+						FF
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" onclick="setRed(0xCC)">
+						CC
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setGreen(0xCC)">
+						CC
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setBlue(0xCC)">
+						CC
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" onclick="setRed(0x99)">
+						99
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setGreen(0x99)">
+						99
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setBlue(0x99)">
+						99
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" onclick="setRed(0x66)">
+						66
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setGreen(0x66)">
+						66
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setBlue(0x66)">
+						66
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" onclick="setRed(0x33)">
+						33
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setGreen(0x33)">
+						33
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setBlue(0x33)">
+						33
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" onclick="setRed(0x00)">
+						00
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setGreen(0x00)">
+						00
+					</button>
+				</td>
+				<td>
+					<button type="button" onclick="setBlue(0x00)">
+						00
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" class="relColor" onclick="addRed(-10)">
+						-10
+					</button>
+				</td>
+				<td>
+					<button type="button" class="relColor" onclick="addGreen(-10)">
+						-10
+					</button>
+				</td>
+				<td>
+					<button type="button" class="relColor" onclick="addBlue(-10)">
+						-10
+					</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<script src="main.js"></script>
+</body>
+
+</html>

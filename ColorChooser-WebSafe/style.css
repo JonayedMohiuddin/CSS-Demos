@@ -1,0 +1,28 @@
+body {
+	background-color: #000000;
+}
+
+h1,
+h2 {
+	text-align: center;
+	color: black;
+	background-color: white;
+}
+
+th {
+	background-color: white;
+}
+
+.relColor {
+	color: #FFFFFF;
+	background-color: #333333;
+}
+
+button {
+	width: 100%;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
