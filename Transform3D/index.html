@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>transform3D.html</title>
+	<meta charset="UTF-8" />
+	<style type="text/css">
+		body {
+			perspective: 1000;
+			-webkit-perspective: 1000;
+		}
+
+		#box1,
+		#box2,
+		#box3,
+		#box4,
+		#box5 {
+			width: 100px;
+			height: 80px;
+			border: 3px solid black;
+			background-color: yellow;
+		}
+
+		#box2 {
+			transform: rotateX(45deg);
+			-webkit-transform: rotateX(45deg);
+		}
+
+		#box3 {
+			transform: rotateX(89deg);
+			-webkit-transform: rotateX(89deg);
+		}
+
+		#box4 {
+			transform: rotateX(180deg);
+			-webkit-transform: rotateX(180deg);
+		}
+
+		#box5 {
+			transform: rotate3D(1, 2, 0, 45deg);
+			-webkit-transform: rotate3D(1, -1, 0, 45deg);
+		}
+	</style>
+</head>
+
+<body>
+	<h1>3D Transform Demo</h1>
+	<div id="box1">box 1</div>
+	<div id="box1">box 2</div>
+	<div id="box1">box 3</div>
