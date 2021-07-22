@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>gradient.html</title>
+	<meta charset="UTF-8" />
+	<style type="text/css">
+		#box1,
+		#box2,
+		#box3,
+		#box4 {
+			height: 100px;
+			width: 100px;
+			border: 1px solid black;
+		}
+
+		#box1 {
+			background-image: linear-gradient(left, red, white);
+			background-image: -moz-linear-gradient(left, red, white);
+			background-image: -webkit-linear-gradient(left, red, white);
+		}
+
+		#box2 {
+			background-image: linear-gradient(75deg, red, white 33%, white 66%, blue);
+			background-image: -moz-linear-gradient(75deg, red, white 33%, white 66%, blue);
+			background-image: -webkit-linear-gradient(75deg, red, white 33%, white 66%, blue);
+		}
+
+		#box3 {
+			background-image: radial-gradient(white, blue);
+			background-image: -moz-radial-gradient(white, blue);
+			background-image: -webkit-radial-gradient(white, blue);
+		}
+
+		#box4 {
+			background-image: radial-gradient(red, white, blue);
+			background-image: -moz-radial-gradient(red, white, blue);
+			background-image: -webkit-radial-gradient(red, white, blue);
+		}
+	</style>
+</head>
+
+<body>
+	<h1>CSS3 Gradients</h1>
+	<div id="box1">Box 1</div>
+	<div id="box2">Box 2</div>
+	<div id="box3">Box 3</div>
+	<div id="box4">Box 4</div>
+</body>
+
+</html>

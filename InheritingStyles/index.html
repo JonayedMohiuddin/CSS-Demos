@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cascading or Inheriting Styles</title>
+	<style type="text/css">
+		body {
+			color: white;
+			background-color: black;
+		}
+
+		p {
+			font-family: monospace;
+		}
+
+		.italicized {
+			font-style: italic;
+		}
+
+		#bold {
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Cascading Styles</h1>
+	<p>This is an ordinary paragraph</p>
+	<p class="italicized">
+		This paragraph is part of a special class
+	</p>
+	<p class="italicized" id="bold">
+		This paragraph has a class and an ID
+	</p>
+</body>
+
+</html>

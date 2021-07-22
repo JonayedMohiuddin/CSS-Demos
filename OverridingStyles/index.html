@@ -1,0 +1,42 @@
+<head>
+	<meta charset="UTF-8">
+	<title>overRide.html</title>
+	<style type="text/css">
+		body {
+			color: red;
+		}
+
+		p {
+			color: green;
+		}
+
+		.myClass {
+			color: blue;
+		}
+
+		#whatColor {
+			color: purple;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		This div has only the style from the body.
+	</div>
+	<p>
+		This is a regular paragraph with paragraph styling
+	</p>
+	<p class="myClass">
+		This paragraph is a member of a class
+	</p>
+	<p class="myClass" id="whatColor">
+		This paragraph is a member of a class and has an ID,
+		both with style rules.
+	</p>
+	
+	<h1 style="color:black; margin-top:200px;">Preceding Sequence :</h1>
+	<h2 style="color:black;">User Preference > Local Styles > Id > Class > Element > Container Element > Body > External Styles</h2>
+</body>
+
+</html>
