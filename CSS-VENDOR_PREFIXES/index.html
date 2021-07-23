@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Vendor Prefixes</title>
+	<style>
+	  .center {
+	  	text-align: center;
+	  }
+		.tableStyle {
+			border: 3px solid;
+			border-color: #ddd;
+			border-spacing: 0px;
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: serif;
+			font-size: 120%;
+			
+			width:50%;
+		}
+
+		.tableStyle th {
+			font-weight: bold;
+			width:50%;
+		}
+
+		.tableStyle tr {
+			height: 60px;
+		}
+
+		.tableStyle tr:nth-child(2n) {
+			background-color: #eee;
+		}
+
+		.tableStyle td {
+			text-align: center;
+			padding-left: 5%;
+			padding-right: 5%;
+			width:50%;
+		}
+
+		.tableStyle td:nth-child(2) {
+			color: #E20B41;
+		}
+	</style>
+</head>
+<table class="tableStyle">
+	<h1 class="center">CSS Vendor Prefixes</h1>
+	<tr>
+		<th>Browser</th>
+		<th>Prefixes</th>
+	</tr>
+	<tr>
+		<td>Android</td>
+		<td>-webkit-</td>
+	</tr>
+	<tr>
+		<td>Chrome</td>
+		<td>-webkit-</td>
+	</tr>
+	<tr>
+		<td>Safari</td>
+		<td>-webkit-</td>
+	</tr>
+	<tr>
+		<td>IOS</td>
+		<td>-webkit-</td>
+	</tr>
+	<tr>
+		<td>Mozilla Firefox</td>
+		<td>-moz-</td>
+	</tr>
+	<tr>
+		<td>Microsoft Internet Explorer</td>
+		<td>-ms-</td>
+	</tr>
+	<tr>
+		<td>Opera</td>
+		<td>-o-</td>
+	</tr>
+</table>
+
+<h2 class="center"><a href="https://www.thoughtco.com/css-vendor-prefixes-3466867">Learn more here.</a></h2>
+
+<body>
+</body>
+
+</html>
