@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Transition Demo</title>
+	<meta charset="UTF-8" />
+	<style type="text/css">
+		body {
+			perspective: 1000;
+			-webkit-perspective: 1000;
+		}
+
+		h1 {
+			color: black font-size: 300%;
+			transition: color 1s ease-in;
+			-webkit-transition: color 1s ease-in;
+			-moz-transition: color 1s ease-in;
+			-o-transition: color 1s ease-in;
+		}
+
+		h1:hover {
+			color: red;
+			font-size: 2em;
+		}
+
+		#box1,
+		#box2 {
+			transition: all 2s ease-in;
+			-webkit-transition: all 1s ease-in;
+			-moz-transition: all 1s ease-in;
+			-o-transition: all 1s ease-in;
+			height: 100px;
+			width: 100px;
+			border: 1px solid black;
+		}
+
+		#box1:hover {
+			transform: rotate(180deg);
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+		}
+
+		#box2:hover {
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(360deg);
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Transition Demo</h1>
+	<p>Hover over the heading to change its color</p>
+	<div id="box1">Box 1</div>
+	<div id="box2">Box 2</div>
+	<p>Hover over the boxes to rotate them</p>
+</body>
+
+</html>

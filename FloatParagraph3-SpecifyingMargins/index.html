@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<title>floatDemo</title>
+	<style type="text/css">
+		p {
+			border: 2px black solid;
+		}
+
+		.floated {
+			float: left;
+			width:50%;
+		}
+		
+		.right {
+			margin-left:52%;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Float Demo</h1>
+	<p>
+		Paragraph 1.
+		This paragraph has the normal behavior of a block-level element.
+		It takes up the entire width of the page, and the next element
+		is placed underneath.
+	</p>
+	<p class="floated">
+		Paragraph 2.
+		This paragraph is floated left. It is placed to the left, and the
+		next element will be placed to the right of it.
+	</p>
+	<p class="right">
+		Paragraph 3.
+		This paragraph has no floating, width or margin. It takes whatever
+		space it can to the right of the floated element, and then flows
+		to the next line.
+	</p>
+</body>
+
+</html>

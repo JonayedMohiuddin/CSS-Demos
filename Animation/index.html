@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>animation.html</title>
+
+  <style type = "text/css">
+  @keyframes anim {
+    0%   {left :0px;   top: 0px;}
+    25%  {left :100px; top: 0px;}
+    50%  {left :100px; top: 100px;}
+    75%  {left :0px;   top: 100px;}
+    100% {left: 0px;   top: 0px;}
+  }
+  
+  @-webkit-keyframes anim {
+    0%   {left :0px;   top: 0px;}
+    25%  {left :100px; top: 0px;}
+    50%  {left :100px; top: 100px;}
+    75%  {left :0px;   top: 100px;}
+    100% {left: 0px;   top: 0px;}
+  }
+  
+  @-moz-keyframes anim {
+    0%   {left :0px;   top: 0px;}
+    25%  {left :100px; top: 0px;}
+    50%  {left :100px; top: 100px;}
+    75%  {left :0px;   top: 100px;}
+    100% {left: 0px;   top: 0px;}
+  }
+  
+  @-o-keyframes anim {
+    0%   {left :0px;   top: 0px;}
+    25%  {left :100px; top: 0px;}
+    50%  {left :100px; top: 100px;}
+    75%  {left :0px;   top: 100px;}
+    100% {left: 0px;   top: 0px;}
+  }
+  
+  #box {
+    position: absolute;
+    border: 1px solid black;
+    -webkit-animation: anim 5s linear infinite;
+    -moz-animation:    anim 5s linear infinite; 
+    -o-animation:      anim 5s linear infinite; 
+    animation:         anim 5s linear infinite; 
+  }
+
+  </style>
+</head>
+<body>  
+  <div id = "box">Moving box</div>
+</body>
+</html>
