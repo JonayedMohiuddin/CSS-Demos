@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<title>nestedList.html</title>
+	<style>
+		/* vertMenu.css */
+		/* unindent each unordered list */
+		#menu ul {
+			margin-left: -2.5em;
+		}
+
+		/* turn each list item into a solid gray block */
+		#menu li {
+			list-style-type: none;
+			border: black solid 1px;
+			float: left;
+			width: 10em;
+			background-color: #CCCCCC;
+			text-align: center;
+		}
+
+		/* set anchors to act like buttons */
+		#menu a {
+			display: block;
+			color: black;
+			text-decoration: none;
+		}
+
+		/* flash anchor white when hovered */
+		#menu a:hover {
+			background-color: white;
+		}
+
+		/* collapse nested lists */
+		#menu li ul {
+			display: none;
+		}
+
+		/* display sublists on hover */
+		#menu li:hover>ul {
+			display: block;
+		}
+
+		/* indent third-generation lists */
+		#menu li li li {
+			margin-left: 1em;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Some of my favorite links</h1>
+	<ul id="menu">
+		<li>Social networking
+			<ul>
+				<li><a href="http://www.digg.com">digg</a></li>
+				<li><a href="http://www.reddit.com">reddit</a></li>
+				<li><a href="http://www.stumbleupon.com">stumbleupon</a></li>
+			</ul>
+		</li>
+		<li>Reference
+			<ul>
+				<li><a href="http://www.google.com">google</a></li>
+				<li><a href="http://wikipedia.org">wikipedia</a></li>
+				<li><a href="http://dictionary.com">dictionary</a></li>
+			</ul>
+		</li>
+		<li>Web development
+			<ul>
+				<li>XHTML/CSS
+					<ul>
+						<li><a href="http://www.w3schools.com">w3 schools</a></li>
+						<li><a href="http://htmlhelp.com">htmlHelp</a></li>
+						<li><a href="http://www.csszengarden.com">CSS Zen Garden</a></li>
+					</ul>
+				</li>
+				<li>Programming
+					<ul>
+						<li><a href="http://javascript.com">javascript.com</a></li>
+						<li><a href="http://php.net">php.net</a></li>
+						<li><a href="http://www.mysql.com">mysql.com</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+
+</html>
